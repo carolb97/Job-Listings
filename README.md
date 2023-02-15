@@ -38,3 +38,7 @@ Suggestions:
 <b>5.</b> To run the application, open your web browser and type in the search bar: localhost:\<port number\>/Job-listings/
   
   Note that in the previous statement it was assumed that this project folder was named "Job-listings" and contained in the htdocs directory.
+  
+  ## Author
+  
+  Carolina Barbosa
