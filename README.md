@@ -28,6 +28,7 @@ Suggestions:
     <li>For Windows and macOS: https://www.mamp.info/en/downloads/</li>
     <li>For Windows, macOS and Linux: https://www.apachefriends.org/download.html </li>
   </ul>
+  
 <b>2.</b> Activate the Apache Web Server by means of the GUI of the software installed in the previous step (take note of the port number);
 
 <b>3.</b> Transfer all the files in this repository;
