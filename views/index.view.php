@@ -29,18 +29,26 @@
                         <!-- First row: company; new and feature tags -->
                         <tr style="border-bottom: 2px solid white;">
                             <td style="color:hsl(180, 29%, 50%)"><?= $company ?></td>
-                            <td style = "text-align: left"><?php if ($new == true) {echo "<mark style='border-radius: 25px;color:white;background-color:hsl(180, 29%, 50%);
-                                                                                                                    padding:.5em;font-size:10px;font-weight:800;'>NEW!</mark>";} ?></td>
+                            <td style = "text-align: left"><?php if ($new == true) {echo "<mark style='border-radius: 25px;color:white;
+                                                                                                        background-color:hsl(180, 29%, 50%);
+                                                                                                        padding:.5em;font-size:10px;font-weight:800;'>
+                                                                                                        NEW!</mark>";} ?></td>
 
-                            <td style = "text-align: left"><?php if ($featured == true) {echo "<mark style='border-radius: 25px;color:white;background-color:#2a3838;padding:.5em;
-                                                                                                                    font-size:10px;font-weight:800;'>FEATURED</mark>";} ?></td>
+                            <td style = "text-align: left"><?php if ($featured == true) {echo "<mark style='border-radius: 25px;color:white;
+                                                                                                        background-color:#2a3838;padding:.5em;
+                                                                                                        font-size:10px;font-weight:800;'>
+                                                                                                        FEATURED</mark>";} ?></td>
                         </tr>
 
                         <!-- Second row: position -->
                         <tr><th colspan="3"><?= $position ?></th></tr>
 
                         <!-- Third row: time of posting, type of contract and location-->
-                        <tr style="border-top: 2px solid white;"><th colspan="3" style="font-weight:200;font-size:15px;color:#889894;"><?= "$postedAt  &#8226  $contract  &#8226  $location" ?></th></tr>
+                        <tr style="border-top: 2px solid white;">
+                            <th colspan="3" style="font-weight:200;font-size:15px;color:#889894;">
+                                <?= "$postedAt  &#8226  $contract  &#8226  $location" ?>
+                            </th>
+                        </tr>
                 
                         
                     </table>
@@ -93,11 +101,15 @@
                                         <!-- First row: company; new and feature tags -->
                                         <tr style="border-bottom: 2px solid white;">
                                             <td style="color:hsl(180, 29%, 50%)"><?= $company ?></td>
-                                            <td style = "text-align: left"><?php if ($new == true) {echo "<mark style='border-radius: 25px;color:white;background-color:hsl(180, 29%, 50%);
-                                                                                                                                    padding:.5em;font-size:10px;font-weight:800;'>NEW!</mark>";} ?></td>
+                                            <td style = "text-align: left"><?php if ($new == true) {echo "<mark style='border-radius: 25px;color:white;
+                                                                                                                        background-color:hsl(180, 29%, 50%);
+                                                                                                                        padding:.5em;font-size:10px;font-weight:800;'>
+                                                                                                                        NEW!</mark>";} ?></td>
 
-                                            <td style = "text-align: left"><?php if ($featured == true) {echo "<mark style='border-radius: 25px;color:white;background-color:#2a3838;padding:.5em;
-                                                                                                                                    font-size:10px;font-weight:800;'>FEATURED</mark>";} ?></td>
+                                            <td style = "text-align: left"><?php if ($featured == true) {echo "<mark style='border-radius: 25px;color:white;
+                                                                                                                        background-color:#2a3838;padding:.5em;
+                                                                                                                        font-size:10px;font-weight:800;'>
+                                                                                                                        FEATURED</mark>";} ?></td>
                                         </tr>
 
                                         <!-- Second row: position -->
