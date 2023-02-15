@@ -40,4 +40,4 @@ Suggestions:
 localhost:\<port number\>/Job-listings/
 ```
   
-  Note that in the previous statement it was assumed that this project folder was named "Job-listings" and contained in the htdocs directory.
+  Note that in the previous statement it was assumed that this project folder was named "Job-listings" and was contained in the htdocs directory.
