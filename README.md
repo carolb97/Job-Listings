@@ -9,9 +9,11 @@
 ## File System
 This project is organized in a way that ensures an easy maintenance; this logic can be applied to a greater scope of projects.
 <ul>
-  <li style="list-style-type:square"> The folder "views" contains all the files responsible for displaying the output;</li>
-  <li style="list-style-type:square"></li>
-  <li style="list-style-type:square"></li>
+  <li style="list-style-type:square"> The subdirectory "views" contains all the files responsible for displaying the output. The "layowt.view.php" file contains all the html instructions that define the page. These are the generic instructions that could easily be used in another page. In the body section, the require statement is used to call the code that displays our data. This code is contained in the "index.view.php" file;</li>
+  <li style="list-style-type:square">The subdirectory "app" contains all the auxiliary files. The file "functions.php" is where all the functions are defined; "config.php" contains all the constants of the program (in our case, just the datafile name); the "app.php" call on the remaining two files with the require statement. The point of this file is to obtain the simplest main program file possible, where we just call a single php file with all auxiliary files, we import the data, parse the data and display it (a total of 4 commands).</li>
+  <li style="list-style-type:square">The remaining subdirectories contain the remaining necessary objects (images and fonts, as the name indicates).</li>
+  <li style="list-style-type:square">In the main directory, there is a total of 4 files: two css files that describe how the html elements are to be displayed (these were retrieved from tutorials and are probably unnecessarily long), the data file and the main "index.php" file. This is our main app file that follows the four steps described above.</li>
+
 </ul>
 
 ## Getting Started
