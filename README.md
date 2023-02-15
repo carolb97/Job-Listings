@@ -7,6 +7,12 @@
 </p>
 
 ## File System
+This project is organized in a way that ensures an easy maintenance; this logic can be applied to a greater scope of projects.
+<ul>
+  <li style="list-style-type:square"> The folder "views" contains all the files responsible for displaying the output;</li>
+  <li style="list-style-type:square"></li>
+  <li style="list-style-type:square"></li>
+</ul>
 
 ## Getting Started
 
