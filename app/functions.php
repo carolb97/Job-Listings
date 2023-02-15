@@ -1,5 +1,13 @@
 <?php
 
+// ######### File used to define all the FUNCTIONS used to simplify the code ##########
+
+//Function that includes "the views" into our base file "index.php"
+function view($name,$model) {
+    require("views/layout.view.php");
+}
+
+// Function to read the json file
 function get_data() {
     $fname = CONFIG['data_file'];
 
@@ -14,19 +22,7 @@ function get_data() {
     return $json;
 }
 
-function to_lowercase($array){
-     
-    $result = $array;
-    $i = 0;
-    foreach($array as $string){
-        $result[$i] = strtolower($string);
-        $i++;
-    }
-
-    return $result;
-
-}
-
+// Function that defines the variables of the json file
 function read_entry($model,$index) {
 
     $item=$model[$index];
@@ -45,34 +41,24 @@ function read_entry($model,$index) {
     $languages = $item->languages;
     $tools = $item->tools;
 
-    return [$company,$position,$role,$logo,$new,$featured,$level,$postedAt,$contract,$location,$languages,$tools];
+    return [$company,$position,$role,$logo,$new,$featured,
+            $level,$postedAt,$contract,$location,$languages,$tools];
 }
-/* //USING FOPEN
-function get_data() {
-    $fname = CONFIG['data_file'];
 
-    $json = '';
-
-    if (!file_exists($fname)) {
-        $handle = fopen($fname,'w+');
-        fclose($handle);
-    } else {
-        $handle = fopen($fname,'r');
-        $json = fread($handle, filesize($fname));
-        fclose($handle);
+// Function that takes an array of strings and returns an array with only lowercase strings
+function to_lowercase($array){
+     
+    $result = $array;
+    $i = 0;
+    foreach($array as $string){
+        $result[$i] = strtolower($string);
+        $i++;
     }
 
-    return json;
-}*/
+    return $result;
 
-function view($name,$model) {
-    global $view_bag;
-    require("views/layout.view.php");
 }
 
-// why is $name defined
-/*unction view($model) {
-    global $view_bag;
-    require("views/layout.view.php");
-}*/
+
+
 
