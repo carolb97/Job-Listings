@@ -20,5 +20,18 @@ This project is organized in a way that ensures an easy maintenance; this logic 
 
 These instructions will get you a copy of the project up and running on your local machine.
 
-### Installing
+### Installing & Running the Application
 
+<b>1.</b> PHP is a server-side scripting language, which means that a server executes the instructions in a script. Thus being, a program must be installed to set up your local server.
+Suggestions:
+  <ul>
+    <li>For Windows and macOS: https://www.mamp.info/en/downloads/</li>
+    <li>For Windows, macOS and Linux: https://www.apachefriends.org/download.html </li>
+  </ul>
+<b>2.</b> Activate the Apache Web Server by means of the GUI of the software installed in the previous step (take note of the port number);
+<b>3.</b> Transfer all the files in this repository;
+<b>4.</b> Move the files to the htdocs directory. This is the directory that the Apache web server looks for files to serve on your domain by default. This location can be changed to whatever value you want. All you have to do is point the Document Root to a different folder in your httpd.conf file.
+
+<b>5.</b> To run the application, open your web browser and type in the search bar: localhost:<port number>/Job-listings/
+  
+  Note that in the previous statement it was assumed that this project folder was named "Job-listings" and contained in the htdocs directory.
