@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
     <!---->
 
-    <title>PHP Fundamentals: <?= ''; ?></title>
     <link href="../bootstrap_tutorial.min.css" rel="stylesheet" />
     <link href="../php-fundamentals.css" rel="stylesheet" />
   </head>
@@ -31,22 +30,20 @@
     
     body {
       font-family: "League Spartan";
-      min-width:375px;        /* Suppose you want minimum width of 1000px */
-      /*width: auto !important;  /* Firefox will set width as auto */
-      width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
+      min-width:375px;       
+      width:1000px;            
       background-color:hsl(180, 52%, 96%);
       margin: auto;
     }
-    p {font-family: "League Spartan";}
+
   </style>
 
   <body>
   
-  <!-- navbar navbar-custom navbar-dark bg-dark fixed-top -->
-    <div class="bg-img"></div> 
+  <!-- Inserting the image header; bg-img class specifications are defined in the bootstrap_tutorial.min.css file -->
+  <div class="bg-img"></div> 
 
-
-  
+  <!-- Defining the search bar and buttons -->
   <div class="container">
     <div class="row">
         <form class="search-bar" action="" method="POST">
@@ -56,16 +53,9 @@
         </form>
     </div>
 
-
-    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
-      <div class="container">
-        <a class="navbar-brand" href="#">PHP Fundamentals: <?= '' ; ?></a>
-      </div>
-    </nav>-->
-
-  <?php /*require('index.view.php'); */ require("$name.view.php"); ?>
+  <!-- require command to include code from another file -->
+  <?php require("$name.view.php"); ?>
   
-
   </body>
 
 </html>
