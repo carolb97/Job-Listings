@@ -39,19 +39,6 @@
   </style>
 
   <body>
-  
-  <!-- Inserting the image header; bg-img class specifications are defined in the bootstrap_tutorial.min.css file -->
-  <div class="bg-img"></div> 
-
-  <!-- Defining the search bar and buttons -->
-  <div class="container">
-    <div class="row">
-        <form class="search-bar" action="" method="POST">
-            <input type="text" placeholder="Search..." name="q" required>
-            <button type="submit" name="search"><img src="images/search.png"></button>
-            <button type="submit" name="home" formnovalidate><img src="images/home.png"></button>
-        </form>
-    </div>
 
   <!-- require command to include code from another file -->
   <?php require("$name.view.php"); ?>

@@ -1,3 +1,17 @@
+<!-- Inserting the image header; bg-img class specifications are defined in the bootstrap_tutorial.min.css file -->
+<div class="bg-img"></div> 
+
+<!-- Defining the search bar and buttons -->
+<div class="container">
+  <div class="row">
+      <form class="search-bar" action="" method="POST">
+          <input type="text" placeholder="Search..." name="q" required>
+          <button type="submit" name="search"><img src="images/search.png"></button>
+          <button type="submit" name="home" formnovalidate><img src="images/home.png"></button>
+      </form>
+  </div>
+
+
 <div class="container" style="min-width: 375px;max-width: 1440px">   
     <?php
     // Variable flag to determine if the search matches aqui keyword. Otherwise "no results were found" is printed.
